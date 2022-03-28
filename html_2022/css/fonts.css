@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+/*=============================================
+=                    ##FONT                   =
+=============================================*/
+/*@font-face {
+    font-family: 'FM';
+    font-style: normal;
+    src: url('../fonts/NotoSansKR-Medium-Hestia.eot');
+    font-weight: 100;
+    src: local(※),
+        url(../fonts/NotoSansKR-Medium-Hestia.eot),
+        url(../fonts/NotoSansKR-Medium-Hestia?#iefix) format('embedded-opentype'),
+        url(../fonts/NotoSansKR-Medium-Hestia.woff) format('woff'),
+        url(../fonts/NotoSansKR-Medium-Hestia.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'FM';
+    font-style: normal;
+    src: url('../fonts/NotoSansKR-Regular-Hestia.eot');
+    font-weight: 200;
+    src: local(※),
+        url(../fonts/NotoSansKR-Regular-Hestia.eot),
+        url(../fonts/NotoSansKR-Regular-Hestia?#iefix) format('embedded-opentype'),
+        url(../fonts/NotoSansKR-Regular-Hestia.woff) format('woff'),
+        url(../fonts/NotoSansKR-Regular-Hestia.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'FM';
+    font-style: normal;
+    src: url('../fonts/NotoSansKR-Bold-Hestia.eot');
+    font-weight: 300;
+    src: local(※),
+        url(../fonts/NotoSansKR-Bold-Hestia.eot),
+        url(../fonts/NotoSansKR-Bold-Hestia?#iefix) format('embedded-opentype'),
+        url(../fonts/NotoSansKR-Bold-Hestia.woff) format('woff'),
+        url(../fonts/NotoSansKR-Bold-Hestia.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'FM';
+    font-style: normal;
+    src: url('../fonts/NotoSansKR-Light-Hestia.eot');
+    font-weight: 400;
+    src: local(※),
+        url(../fonts/NotoSansKR-Light-Hestia.eot),
+        url(../fonts/NotoSansKR-Light-Hestia?#iefix) format('embedded-opentype'),
+        url(../fonts/NotoSansKR-Light-Hestia.woff) format('woff'),
+        url(../fonts/NotoSansKR-Light-Hestia.otf) format('opentype');
+}*/
+
+
+/*=============================================
+=                 ##FONT FTP                  =
+=============================================*/
+@font-face {
+    font-family: 'FM';
+    font-style: normal;
+    font-weight: 100;
+    src: url('../fonts/NotoSansKR-Medium-Hestia.ttf');
+}
+
+@font-face {
+    font-family: 'FM';
+    font-style: normal;
+    font-weight: 200;
+    src: url('../fonts/NotoSansKR-Regular-Hestia.ttf');
+}
+
+@font-face {
+    font-family: 'FM';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/NotoSansKR-Bold-Hestia.ttf');
+}
+
+@font-face {
+    font-family: 'FM';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/NotoSansKR-Light-Hestia.ttf');
+}
