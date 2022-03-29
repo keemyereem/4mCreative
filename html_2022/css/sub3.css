@@ -2,15 +2,14 @@
 
 .section {}
 .section h2 {line-height:1; text-align:center;}
-.section h2 p {font-weight:200; font-size:4.5rem; line-height:1; letter-spacing:-3px;}
+.section h2 p {font-weight:200; font-size:4.5rem; line-height:1; letter-spacing:-3px; color:#5b5b5b;}
 .section h2 p:first-child {color:#000;}
-.section h2 p:last-child {color:#5b5b5b;}
 .section h2.blue p:first-child {color:#fff;}
 .section h2.blue p:last-child {color:#b9c1d4;}
 .section h3 {display:inline-block; *display:inline-block; position:relative; font-weight:300; font-size:1rem; color:#000; line-height:1; letter-spacing:10px; zoom:1;}
 .section h3:before {content:""; display:block; position:absolute; top:.5rem; left:-2.2rem; background:#000; width:1rem; height:1px;}
 .section h3:after {content:""; display:block; position:absolute; top:.5rem; right:-1.8rem; background:#000; width:1rem; height:1px;}
-.section .box_tit {margin-top:2rem; text-align:center;}
+.section .box_tit {margin-top:2.8rem; text-align:center;}
 .section h3.blue {color:#fff;}
 .section h3.blue:before {background:#fff;}
 .section h3.blue:after {background:#fff;}
@@ -21,14 +20,15 @@
 /* work */
 .workBox {position:relative; padding-top:8.5rem;}
 .workBox .works_list {width:100%;}
+.workBox h2 p:last-child {font-size:.7rem; color: #221e1f; font-weight: 200; padding-top: 1rem; letter-spacing: 0;}
 
-.workBox .works_list .view_category {position:relative; margin-top:.5rem; text-align:center;}
-.workBox .works_list .view_category ul {display:inline-block; *display:inline-block; padding:0 1.5rem; border-bottom:1px solid #e6e6e6; zoom:1;}
+.workBox .works_list .view_category {position:relative; margin-top:2.4rem; text-align:center;}
+.workBox .works_list .view_category ul {display:inline-block; *display:inline-block; padding:0 1.5rem; zoom:1;}
 .workBox .works_list .view_category ul:after {content:""; display:block; clear:both;}
-.workBox .works_list .view_category ul li {position:relative; bottom:-1px; float:left; padding:0 .5rem;}
-.workBox .works_list .view_category ul li a {font-weight:200; font-size:.6rem; color:#a4a4a4;}
-.workBox .works_list .view_category ul li.active {border-bottom:2px solid #000;}
-.workBox .works_list .view_category ul li.active a {color:#000;}
+.workBox .works_list .view_category ul li {position:relative; float:left; margin: 0 .4rem; }
+.workBox .works_list .view_category ul li a {font-weight:300; font-size:.7rem; padding:0 .45rem; color:#a4a4a4; display: block; line-height: 1.4rem;}
+.workBox .works_list .view_category ul li.active { background:#000; }
+.workBox .works_list .view_category ul li.active a {color:#fff;}
 .workBox .works_list .view_category.mobile {display:none; overflow-x: auto; margin-top:2rem;}
 .workBox .works_list .view_category.mobile ul {width:45rem; padding:0; border-bottom:0;}
 .workBox .works_list .view_category.mobile ul li {margin-left:.36rem; padding:0; border:1px solid #e6e6e6;}
@@ -65,12 +65,13 @@
 
 .workBox .works_list .list_view ul li.intxt a .data_box {position:absolute; top:0; left:0;}
 .workBox .works_list .list_view ul li.intxt a .data_box p.tit {font-size:1rem;}
-.workBox .works_list .list_view ul li.intxt a .data_box p.notice {color:#000;}
+/* .workBox .works_list .list_view ul li.intxt a .data_box p.notice {color:#000;} */
 .workBox .works_list .list_view ul li.intxt a .data_box p.notice.white {color:#fff;}
 .workBox .works_list .list_view ul li.intxt a .data_box p.notice.gray {color:#fff; opacity:.5;}
 .workBox .works_list .list_view ul li.intxt a .data_box p.notice.gray2 {color:#000; opacity:.5;}
 .workBox .works_list .list_view ul li.intxt a .data_box p.period {}
 .workBox .works_list .list_view ul li.intxt a .data_box p.period.gray {color:#fff; opacity:.5;}
+.workBox .works_list .list_view ul li.intxt a .data_box p.period.gray2 {color:#000; opacity:.5;}
 
 .workBox .works_list .list_view ul li.outtxt a .data_box {position:relative;}
 .workBox .works_list .list_view ul li.outtxt a .data_box p.tit {font-size:1rem;}
