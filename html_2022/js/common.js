@@ -89,7 +89,7 @@ var gnbEvent = {
                         break;
                 }
             });
-        }else{
+        } else {
            $(".main_area").removeClass("blind");
             $(".main_area").css("opacity",1);
             $(".main_area").css("height","auto");
@@ -160,6 +160,7 @@ var gnbEvent = {
                 $(".header h1 img").attr("src",sAfterSrc);
                 $(".header h1 img").stop().animate({ width:55 }, _.logoTime);
                 $(".header").stop().animate({ padding:"1rem 0 .5rem 0" }, _.logoTime);
+                
 
                 if(windowWidth < 769){
                     $(".header").css("border-bottom","1px solid #e6e6e6");
@@ -176,7 +177,7 @@ var gnbEvent = {
                     $(".header .gnb .gMenu").stop().animate({ marginTop:"1rem" }, _.logoTime);
                 }
 
-            }else if(curTop < scrollLogo){
+            } else if(curTop < scrollLogo){
                 $(".header").css("border-bottom",0);
                 $(".header").stop().animate({ padding:"2rem 0 1.75rem 0" }, _.logoTime);
                 $(".header h1 img").attr("src",sBeforeSrc);
@@ -187,7 +188,7 @@ var gnbEvent = {
 
                 if(windowWidth < 769){
                     $(".header h1 img").stop().animate({ width:"5.75rem" }, _.logoTime);
-                }else{
+                } else {
                     $(".header .gnb .gMenu").stop().animate({ marginTop:"1.25rem" }, _.logoTime);
                     $(".header h1 img").stop().animate({ width:115 }, _.logoTime);
                 }
@@ -202,7 +203,7 @@ var swiperEvent = {
     visualTitle:["2022년 2월<br/>포엠크리에이티브 15주년","웹어워드, 스마트 앱 어워드<br/>분야별 다수 수상!","에코어워드 웹인증, 웹접근성분야<br/>2년 연속 대상!"],
     visualNotice:[
         "여러분의 성원과 관심 속에 15주년이 되었습니다.<br/>앞으로 더 발전하는 포엠크리에이티브가 되도록 하겠습니다.",
-        "LG MMA 글로벌 브랜드 분야 대상<br/>맥도날드 25일의 크리스마스 이벤트/프로모션 분야 대상<br/>네오팜샵 APP 쇼핑몰 분야 최우수상<br/>2020년 포엠 크리에이티브는 위와 같은 상을 수상하였습니다.",
+        "- LG MMA 글로벌 브랜드 분야 대상<br/>- 맥도날드 25일의 크리스마스<br/> 이벤트/프로모션 분야 대상<br/>-  네오팜샵 APP 쇼핑몰 분야 최우수상<br/><br/>대외적으로 UI/UX로 높은 평가를 받고 있는 포엠크리에이티브는 수많은 어워드를 수상하였습니다.",
         "웹 접근성분야 최우수상<br/>모바일 접근성분야 대상<br/>웹 접근성분야 대상"],
     arrowTitle:["2022년 2월 포엠크리에이티브 15주년","웹어워드, 스마트 앱 어워드 분야별 다수 수상!","에코어워드 웹인증, 웹접근성분야 2년 연속 대상!"],    
     slideIdx:0,

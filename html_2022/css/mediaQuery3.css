@@ -86,18 +86,18 @@
     .section h4 p:last-child {margin-top:.7rem; font-size:6.5vw;}
 
     .main_area {overflow:hidden; padding:0 1rem; /* padding-bottom:3rem; */ /* height: auto; */ /* background: orange; */}
-    .main_visual {/* border: 1px solid red; */height: 700px;}
-    .main_visual .visual_box {overflow: hidden; width: 100%; height: 700px;/* height: auto; */border: 1px solid #000;}
+    .main_visual {/* border: 1px solid red; */height: 35rem;}
+    .main_visual .visual_box {overflow: hidden; width: 100%; height: fit-content;/* height: auto; */border: 1px solid #000;}
     .main_visual .slide_arrow {/* width: 104px; height: 20px; background: #aaa; position: relative; */}
     .main_visual .arrow {top:auto; bottom:0;}
-    .main_visual .arrow.swiper-button-prev {left:auto; right: 66px;}
-    .main_visual .arrow.swiper-button-prev:after {content:''; display: inline-block; width: 2px; height: 20px; background: #cfcfcf; position: absolute; bottom: 2px; left: 46px;}
+    .main_visual .arrow.swiper-button-prev {left:auto; right: 6.6rem;}
+    .main_visual .arrow.swiper-button-prev:after {content:''; display: inline-block; width: 1px; height: 10px; background: #cfcfcf; position: absolute; bottom: 2px; left: 46px;}
     .main_visual .arrow.swiper-button-next {right: 10px;}
     .main_visual .arrow a {text-indent: -9999px;}
     .visual_notice {width: 100%; padding: 0 1rem; top: 280px;}
     .visual_notice .notice {width:100%; height:auto; min-height: 225px; padding: 1.25rem 1rem;}
     .visual_notice .notice .event_box {}
-    .visual_notice .notice .tit {font-size: 12px; padding: 0 0 1rem 0;}
+    .visual_notice .notice .tit {font-size: 12px; padding: 0 0 10px 0;}
     .visual_notice .notice p.sub_tit {font-size: 19px;}
 
     .main_visual .slide_navigation {/* display:none; */bottom: 2px; left:1rem; margin-left: 0; transform: translateX(0);}
