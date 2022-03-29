@@ -30,7 +30,7 @@
 .workBox .works_list .view_category ul li.active { background:#000; }
 .workBox .works_list .view_category ul li.active a {color:#fff;}
 .workBox .works_list .view_category.mobile {display:none; overflow-x: auto; margin-top:2rem;}
-.workBox .works_list .view_category.mobile ul {width:45rem; padding:0; border-bottom:0;}
+.workBox .works_list .view_category.mobile ul {width:47rem; padding:0; border-bottom:0;}
 .workBox .works_list .view_category.mobile ul li {margin-left:.36rem; padding:0; border:1px solid #e6e6e6;}
 .workBox .works_list .view_category.mobile ul li:first-child {margin-left:0;}
 .workBox .works_list .view_category.mobile ul li a {display:block; min-width:6.5rem; height:2.875rem; line-height:2.875rem; padding:0 1.05rem; font-size:.7rem; color:#000;}

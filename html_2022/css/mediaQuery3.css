@@ -213,8 +213,12 @@
     .header h1 img {width:5.75rem;}
     .main_visual:after {display:none;}
     .main_visual .visual_box {height: 25.3rem;}
+    .main_visual .slide_navigation {}
+    .main_visual .arrow {}
+    .visual_notice {top: -4.6rem;/* position: initial; margin-top: -4.6rem; */}
     .visual_notice .notice {width: 100%;}
     .visual_notice .notice .tit {font-size: 12px; padding: 0 0 10px 0;}
+    .visual_notice .notice p {font-size: 12px;}
     .visual_notice .notice p.sub_tit {font-size: 19px;}
 
     .selectBox00 {background-size:9%;}
@@ -232,6 +236,7 @@
     .workBox .works_list .list_view ul li a>img.mobile {display:block;}
     .workBox .works_list .list_view ul li a>img.pc {display:none;}
     .workBox .works_list .list_view ul li a .data_box p.notice {font-size:.8rem;}
+    /* .workBox .works_list .list_view ul li a .data_box p.notice br { display: none;} */
     .workBox .works_list .list_view ul li a .data_box p.period {font-size:.8rem;}
     .workBox .works_list .list_view ul li .bgitem {top:0 !important; left:0 !important; width:100% !important; height:100% !important;}
 
