@@ -25,7 +25,7 @@ $(window).resize(function(){
     }
 });
 
-var dataUrl = "js/dataJson2.js";
+var dataUrl = "js/dataJson.js";
 
 // intro event
 var introEvent = {
@@ -523,8 +523,9 @@ var aboutEvent = {
         $(window).scroll(function(){
             if(_.isScroll){return false;}
             var curTop = $(window).scrollTop();
-            var scrollAbout = $(".aboutBox .about_list").offset().top;
-            if(curTop > scrollAbout){
+            //var scrollAbout = $(".aboutBox .about_list").offset().top;
+            var scrollAbout = $(".aboutBox").offset().top;
+            if(curTop > scrollAbout - 500){
                 _.listEvent();
             }
         });

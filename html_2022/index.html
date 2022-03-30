@@ -7,12 +7,12 @@
         <meta name="format-detection" content="telephone=no" />
         <!--<link rel="shortcut icon" href="images/favicon.png" type="image/png">-->
 		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-        <title>포엠크리에이티브</title>
+        <title>포엠크리에이티브_테스트</title>
         <!-- css file load -->
 		<link type="text/css" href="css/fonts.css" rel="stylesheet">
-		<link type="text/css" href="css/common3.css" rel="stylesheet">
-        <link type="text/css" href="css/sub3.css" rel="stylesheet">
-		<link type="text/css" href="css/mediaQuery.css" rel="stylesheet">
+		<link type="text/css" href="css/common.css" rel="stylesheet">
+        <link type="text/css" href="css/sub.css" rel="stylesheet">
+		<link type="text/css" href="css/querytest.css" rel="stylesheet">
         <!-- js file load -->
         <script type="text/javascript" src="js/lib/jquery-1.11.3.min.js"></script>
 		<script type="text/javascript" src="js/lib/jquery-ui-1.11.3.min.js"></script>
@@ -20,8 +20,8 @@
         <script type="text/javascript" src="js/lib/jquery.swiper-2.1.min.js"></script>
 		<script type="text/javascript" src="js/lib/isotope.pkgd.min.js"></script>
 		<script type="text/javascript" src="js/lib/packery-mode.pkgd.js"></script>
-        <script type="text/javascript" src="js/common.js"></script>
-        <script type="text/javascript" src="js/loader2.js"></script>
+        <script type="text/javascript" src="js/test.js"></script>
+        <script type="text/javascript" src="js/loader.js"></script>
 		<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=314bdfa3149e2d56054b864e5390630a"></script>
 		<script type="text/javascript" src="/common/js/common.js"></script>
 
@@ -112,61 +112,62 @@
 	    <div class="container">
 		<div class="contents">
 		    <!-- visual slide -->
-		    <div class="inner">
+		    <!-- <div class="inner"> -->
 			<div class="main_area">
 			    <div class="main_visual">
-				<!-- swiper navigation left btn -->
-				<span id="fPrev" class="arrow swiper-button-prev">
-				    <a href="javascript:;">
-					<!-- <img src="images/icon/visual_navi_left_off.png" alt="PREV SLIDE" />
-					<img src="images/icon/visual_navi_left_on.png" alt="PREV SLIDE" /> -->
-					에코어워드 웹인증, 웹접근성분야 2년 연속 대상
-				    </a>
-				</span>
-				<div id="product_visual" class="visual_box">
-				    <!-- slide swiper lists -->
-				    <div class="swiper-wrapper">
-						<div class="swiper-slide">
-							<img src="images/main/visual_slide00.jpg" alt="2022년 2월 포엠크리에이티브 15주년" />
-							<img src="images/main/visual_m_slide00.png" alt="2022년 2월 포엠크리에이티브 15주년" />
-						</div>
-						<div class="swiper-slide">
-							<img src="images/main/visual_slide001.jpg" alt="웹어워드, 스마트 앱 어워드 분야별 다수 수상" />
-							<img src="images/main/visual_m_slide01.png" alt="웹어워드, 스마트 앱 어워드 분야별 다수 수상" />
-						</div>
-						<div class="swiper-slide">
-							<img src="images/main/visual_slide002.jpg" alt="에코어워드 웹인증, 웹접근성분야 2년 연속 대상" />
-							<img src="images/main/visual_m_slide002.jpg" alt="에코어워드 웹인증, 웹접근성분야 2년 연속 대상" />
-						</div>
-				    </div>
-				</div>
-
-				<!-- swiper navigation right btn -->
-				<span id="fNext" class="arrow swiper-button-next">
-				    <a href="javascript:;">웹어워드, 스마트 앱 어워드 분야별 다수 수상!</a>
-				</span>
-				<!-- slide navigation -->
-				<div class="slide_navigation">
-				    <ul>
-					<li class="active"><span class="swiper_paging"></span></li>
-					<li><span class="swiper_paging"></span></li>
-					<li><span class="swiper_paging"></span></li>
-				    </ul>
-				</div>
-			    </div>
-			    <div class="visual_notice">
-					<div class="notice">
-						<div class="tit">news</div>
-						<div class="event_box">
-							<p class="sub_tit">2022년 2월<br/>포엠크리에이티브 15주년</p>
-							<p>
-								여러분의 성원과 관심 속에 15주년이 되었습니다.<br/>
-								앞으로 더 발전하는 포엠크리에이티브가 되도록 하겠습니다.
-							</p>
+					<div id="product_visual" class="visual_box">
+						<!-- slide swiper lists -->
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img src="images/main/visual_slide00.jpg" alt="2022년 2월 포엠크리에이티브 15주년" />
+								<img src="images/main/visual_m_slide000.jpg" alt="2022년 2월 포엠크리에이티브 15주년" />
+							</div>
+							<div class="swiper-slide">
+								<img src="images/main/visual_slide001.jpg" alt="웹어워드, 스마트 앱 어워드 분야별 다수 수상" />
+								<img src="images/main/visual_m_slide001.jpg" alt="웹어워드, 스마트 앱 어워드 분야별 다수 수상" />
+							</div>
+							<div class="swiper-slide">
+								<img src="images/main/visual_slide002.jpg" alt="에코어워드 웹인증, 웹접근성분야 2년 연속 대상" />
+								<img src="images/main/visual_m_slide002.jpg" alt="에코어워드 웹인증, 웹접근성분야 2년 연속 대상" />
+							</div>
 						</div>
 					</div>
-			    </div>
-			</div>
+				
+					<div class="visual_notice">
+						<div class="notice">
+							<div class="tit">news</div>
+							<div class="event_box">
+								<p class="sub_tit">2022년 2월<br/>포엠크리에이티브 15주년</p>
+								<p>
+									여러분의 성원에 힘입어 15주년을 맞이하였습니다. <br/>
+									앞으로도 무한한 발전으로 보답하는<br/> 포엠크리에이티브가 되도록 하겠습니다.
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- slide navigation -->
+					<div class="slide_navigation">
+						<ul>
+						<li class="active"><span class="swiper_paging"></span></li>
+						<li><span class="swiper_paging"></span></li>
+						<li><span class="swiper_paging"></span></li>
+						</ul>
+					</div>
+					<div class="slide_arrow">
+						<!-- swiper navigation left btn -->
+						<span id="fPrev" class="arrow swiper-button-prev">
+							<a href="javascript:;">
+							<!-- <img src="images/icon/visual_navi_left_off.png" alt="PREV SLIDE" />
+							<img src="images/icon/visual_navi_left_on.png" alt="PREV SLIDE" /> -->
+							에코어워드 웹인증, 웹접근성분야 2년 연속 대상
+							</a>
+						</span>
+						<!-- swiper navigation right btn -->
+						<span id="fNext" class="arrow swiper-button-next">
+							<a href="javascript:;">웹어워드, 스마트 앱 어워드 분야별 다수 수상!</a>
+						</span>						
+					</div>
+				</div>
 		    </div>
 		    <!-- //visual slide -->
 		    <!-- work -->
@@ -175,6 +176,7 @@
 			    <h2>
 				<p>새로운</p>
 				<p>세상을 만듭니다</p>
+				<p>제작되는 모든 사이트의 웹표준, 웹접근성을 준수합니다.</p>
 			    </h2>
 			    <div class="box_tit">
 				<h3>WORKS</h3>
@@ -212,7 +214,7 @@
             <li><a href="javascript:;" alt="promotion">PROMOTION</a></li>
             <li><a href="javascript:;" alt="application">APPLICATION</a></li>
           </ul>
-				</div>
+		</div>
 				<div class="list_view">
 				    <ul class="grid"></ul>
 				</div>
@@ -226,7 +228,8 @@
 		    <!-- about -->
 		    <div id="about" class="section aboutBox">
 			<div class="inner">
-			    <!-- <h2>
+			<!--
+				<h2>
 				<p>우리들의</p>
 				<p>경험을 믿습니다</p>
 			    </h2>
@@ -242,7 +245,7 @@
 					    </div>
 					</li>
 					<li>
-					    <div>
+					    <div> 
 						<img src="images/about/about_img02.png" alt="4M CREATIVE INC." />
 					    </div>
 					</li>
@@ -277,9 +280,11 @@
 				    </ul>
 				</div>
 			    </div>
+			-->
 			    <div class="about_mLine">
 				<img src="images/about/about_m_bg00.jpg" alt="line" />
-			    </div> -->
+			    </div>
+
 			    <div class="about_business">
 				<h4>
 				    <p>BUSINESS AREA</p>
@@ -298,7 +303,7 @@
 				    <div class="box_digit">
 					<ul>
 					    <li><p>웹표준/접근성</p></li>
-					    <li><p>웹인증마크</p></li>
+					    <li><p>웹 인증마크</p></li>
 					    <li class="gray"><p>반응형 웹</p></li>
 					    <li><p>워드프레스</p></li>
 					    <li class="empty"><p></p></li>
