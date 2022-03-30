@@ -221,12 +221,12 @@
     .main_visual .visual_box {height: 25.3rem;}
     .main_visual .slide_navigation {bottom: 3.3rem;}
     .slide_navigation ul li span {width: 2rem;}
-    .main_visual .slide_arrow {width: 3.8rem;width: 3.47rem;bottom: 3.3rem;right: 1.67rem; }
+    .main_visual .slide_arrow {/* width: 3.47rem; */bottom: 2.7rem;right: 1.67rem; }
     /* .main_visual .arrow {bottom: 2.74rem;top: initial;} */
-    .main_visual .arrow.swiper-button-prev a, .main_visual .arrow.swiper-button-next a { background-size: .4rem .6rem;width: .4rem;height: .6rem; }
-    .main_visual .arrow.swiper-button-prev a.on {background-size: .4rem .6rem;}
-    .main_visual .arrow.swiper-button-next a.on {background-size: .4rem .6rem;}
-    .main_visual .arrow.swiper-button-prev:after { height: .67rem;bottom: -.06rem;}
+    .main_visual .arrow.swiper-button-prev a, .main_visual .arrow.swiper-button-next a { background-size: .8rem 1.4rem;width: .8rem;height: 1.4rem; }
+    .main_visual .arrow.swiper-button-prev a.on {background-size: .8rem 1.4rem;}
+    .main_visual .arrow.swiper-button-next a.on {background-size: .8rem 1.4rem;}
+    .main_visual .arrow.swiper-button-prev:after { width: 2px; height: 1.45rem; bottom: 0; margin-left: -1px;}
     .visual_notice {top: -4.6rem;}
     .visual_notice .notice .tit {font-size: .8rem; padding: 0 0 10px 0;}
     .visual_notice .notice p {font-size: .8rem;}

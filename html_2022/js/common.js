@@ -203,8 +203,12 @@ var swiperEvent = {
     visualTitle:["2022년 2월<br/>포엠크리에이티브 15주년","웹어워드, 스마트 앱<br/>어워드 분야별 다수 수상!","에코어워드 웹인증, 웹접근성분야<br/>2년 연속 대상!"],
     visualNotice:[
         "여러분의 성원에 힘입어 15주년을 맞이하였습니다.<br/>앞으로도 무한한 발전으로 보답하는<br/>포엠크리에이티브가 되도록 하겠습니다.",
-        "- LG MMA 글로벌 브랜드 분야 대상<br/>- 맥도날드 25일의 크리스마스<br/>이벤트/프로모션 분야 대상<br/>-  네오팜샵 APP 쇼핑몰 분야 최우수상<br/><br/>대외적으로 UI/UX로 높은 평가를 받고 있는 포엠크리에이티브는 수많은 어워드를 수상하였습니다.",
+        "- LG MMA 글로벌 브랜드 분야 대상<br/>- 맥도날드 25일의 크리스마스<br/>이벤트/프로모션 분야 대상<br/>-  네오팜샵 APP 쇼핑몰 분야 최우수상<div></div>대외적으로 UI/UX로 높은 평가를 받고 있는 포엠크리에이티브는 수많은 어워드를 수상하였습니다.",
         "- 웹 접근성분야 최우수상<br/>- 모바일 접근성분야 대상<br/>- 웹 접근성분야 대상"],
+        visualNoticeM:[
+            "여러분의 성원에 힘입어 15주년을 맞이하였습니다.<br/>앞으로도 무한한 발전으로 보답하는<br/>포엠크리에이티브가 되도록 하겠습니다.",
+            "- LG MMA 글로벌 브랜드 분야 대상<br/>- 맥도날드 25일의 크리스마스 이벤트/프로모션 분야 대상<br/>-  네오팜샵 APP 쇼핑몰 분야 최우수상<div></div>대외적으로 UI/UX로 높은 평가를 받고 있는 포엠크리에이티브는 수많은 어워드를 수상하였습니다.",
+            "- 웹 접근성분야 최우수상<br/>- 모바일 접근성분야 대상<br/>- 웹 접근성분야 대상"],
     arrowTitle:["2022년 2월 포엠크리에이티브 15주년","웹어워드, 스마트 앱 어워드 분야별 다수 수상!","에코어워드 웹인증, 웹접근성분야 2년 연속 대상!"],    
     slideIdx:0,
 
@@ -430,16 +434,31 @@ var swiperEvent = {
         });
     },
     noticeEvent:function(idx){
-        var _ = this;
-        $(".visual_notice .notice .event_box").stop().animate({ opacity:0, marginLeft:-100 },500,function(){
-            $(this).find("p").eq(0).html(_.visualTitle[idx]);
-            $(this).find("p").eq(1).html(_.visualNotice[idx]);
-            $(this).stop().animate({ opacity:0, marginLeft:100 },0,function(){
-                $(this).stop().animate({ opacity:1, marginLeft:0 }, 500);
+        var winWidth = $(window).width();
+        if(winWidth > 768){
+            var _ = this;
+            $(".visual_notice .notice .event_box").stop().animate({ opacity:0, marginLeft:-100 },500,function(){
+                $(this).find("p").eq(0).html(_.visualTitle[idx]);
+                $(this).find("p").eq(1).html(_.visualNotice[idx]);
+                $(this).stop().animate({ opacity:0, marginLeft:100 },0,function(){
+                    $(this).stop().animate({ opacity:1, marginLeft:0 }, 500);
+                });
             });
-        });
-        $(".slide_navigation ul li").removeClass("active");
-        $(".slide_navigation ul li").eq(idx).addClass("active");
+            $(".slide_navigation ul li").removeClass("active");
+            $(".slide_navigation ul li").eq(idx).addClass("active");
+        }else if(winWidth <= 768){
+            var _ = this;
+            $(".visual_notice .notice .event_box").stop().animate({ opacity:0, marginLeft:-100 },500,function(){
+                $(this).find("p").eq(0).html(_.visualTitle[idx]);
+                $(this).find("p").eq(1).html(_.visualNoticeM[idx]);
+                $(this).stop().animate({ opacity:0, marginLeft:100 },0,function(){
+                    $(this).stop().animate({ opacity:1, marginLeft:0 }, 500);
+                });
+            });
+            $(".slide_navigation ul li").removeClass("active");
+            $(".slide_navigation ul li").eq(idx).addClass("active");
+        }
+      
     }
 };
 
