@@ -99,7 +99,7 @@
     .visual_notice .notice .event_box {}
     .visual_notice .notice .tit {/* font-size: 12px; */ padding: 0 0 10px 0;}
     .visual_notice .notice p.sub_tit {/* font-size: 19px; */}
-
+    .visual_notice .notice p > div {height: .6rem;}
     .main_visual .slide_navigation {/* display:none; */bottom: 5.5rem; left:1rem; margin-left: 0; transform: translateX(0);}
     #product_visual .swiper-wrapper .swiper-slide {max-width:100%; height: auto; max-height: 726px;}
     #product_visual .swiper-wrapper .swiper-slide img {left:0; width:100%; margin-left:0;}
@@ -271,7 +271,7 @@
     .popup_wrap .selectBox {height:3rem; background-size:5%;}
     .popup_wrap .selectBox label {line-height:3rem;}
 
-    .main_visual .arrow.swiper-button-prev {left:auto; right:3.5rem;}
+    /* .main_visual .arrow.swiper-button-prev {left:auto; right:3.5rem;} */
 
     .footer .copyright p {font-size:.8rem;}
 }
