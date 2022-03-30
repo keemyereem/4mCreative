@@ -85,22 +85,24 @@
     .section h4 p:first-child {padding-left:1.5rem; font-size:2vw;}
     .section h4 p:last-child {margin-top:.7rem; font-size:6.5vw;}
 
-    .main_area {overflow:hidden; padding:0 1rem; /* padding-bottom: 7rem; */ /* height: auto; */ /* background: orange; */}
-    .main_visual {/* border: 1px solid red; */}
+    .main_area {overflow:hidden; padding:0 1rem;}
+    .main_visual {}
     .main_visual .visual_box {overflow: hidden; width: 100%; height: 35rem;}
-    .main_visual .slide_arrow {/* width: 104px; height: 20px; background: #aaa; position: relative; */}
-    .main_visual .arrow {top: 36.25rem;height: 1.2rem; }
-    .main_visual .arrow.swiper-button-prev {left:auto; right: 3.9rem;}
-    .main_visual .arrow.swiper-button-prev:after {content:''; display: inline-block; width: 1px; height: 1rem; background: #cfcfcf; position: absolute; bottom: .1rem; left: 2.35rem;}
-    .main_visual .arrow.swiper-button-next {right: 1rem;}
-    .main_visual .arrow a {text-indent: -9999px;}
+    .main_visual .slide_arrow {display: inline-flex;justify-content: space-between;width: 5.2rem;height: fit-content;position: absolute;top: 35.5rem;right:0;}
+    .main_visual .arrow {position: initial;}
+    .main_visual .arrow.swiper-button-prev a, .main_visual .arrow.swiper-button-next a { width: .55rem;height: .85rem;background-size: .55rem .85rem;text-indent: -9999px; }
+    .main_visual .arrow.swiper-button-prev a {padding-left: 0;}
+    .main_visual .arrow.swiper-button-next a {padding-right: 0;}
+    .main_visual .arrow.swiper-button-prev a.on {padding-left: 0;background-size: .55rem .85rem;}
+    .main_visual .arrow.swiper-button-next a.on {padding-right: 0;background-size: .55rem .85rem;}
+    .main_visual .arrow.swiper-button-prev {left: initial;}
+    .main_visual .arrow.swiper-button-prev:after {content:''; display: inline-block; width: 1px; height: 1rem; background: #cfcfcf; position: absolute; bottom: -.05rem; left:50%;}
+    .main_visual .arrow.swiper-button-next {right: initial;}
     .visual_notice {width: 100%; padding: 0 1rem; position: relative; top: -6.9rem;}
-    .visual_notice .notice {/* width:100%; */ height:auto; min-height: 225px; padding: 1.25rem 1rem 2.25rem 1rem;}
-    .visual_notice .notice .event_box {}
-    .visual_notice .notice .tit {/* font-size: 12px; */ padding: 0 0 10px 0;}
-    .visual_notice .notice p.sub_tit {/* font-size: 19px; */}
+    .visual_notice .notice { height:auto; min-height: 225px; padding: 1.25rem 1rem 2.25rem 1rem;}
+    .visual_notice .notice .tit {padding: 0 0 10px 0;}
     .visual_notice .notice p > div {height: .6rem;}
-    .main_visual .slide_navigation {/* display:none; */bottom: 5.5rem; left:1rem; margin-left: 0; transform: translateX(0);}
+    .main_visual .slide_navigation {display: inline-block;bottom: 5.5rem; left:1rem; margin-left: 0; transform: translateX(0);}
     #product_visual .swiper-wrapper .swiper-slide {max-width:100%; height: auto; max-height: 726px;}
     #product_visual .swiper-wrapper .swiper-slide img {left:0; width:100%; margin-left:0;}
     #product_visual .swiper-wrapper .swiper-slide img:nth-child(1) {display:none;}
@@ -206,7 +208,11 @@
     .popup_work .detail_view .view_box .view_area .work_info .info_list ul li p:first-child {font-size:.875rem;}
     .popup_work .detail_view .view_box .view_area .work_info .info_list ul li p:last-child {font-size:.875rem;}
 }
+@media all and (max-width: 535px) {
+    .visual_notice .notice {width: 100%;}
+    .main_visual .slide_arrow {position: absolute;top:initial;bottom: 5.5rem;right: 1rem;}
 
+}
 @media all and (max-width: 414px) {
     html,body {font-size:15px}
     .header .gnb .gMenu ul li {margin-right:1.5rem;}
@@ -214,17 +220,19 @@
     .main_visual:after {display:none;}
     .main_visual .visual_box {height: 25.3rem;}
     .main_visual .slide_navigation {bottom: 3.3rem;}
-    .main_visual .arrow {bottom: 2.74rem;top: initial;}
-    .main_visual .arrow.swiper-button-prev:after {}
-    .visual_notice {top: -4.6rem;/* position: initial; margin-top: -4.6rem; *//* padding-bottom: .87rem; */}
-    .visual_notice .notice {width: 100%;}
-    .visual_notice .notice .tit {font-size: 12px; padding: 0 0 10px 0;}
-    .visual_notice .notice p {font-size: 12px;}
-    .visual_notice .notice p.sub_tit {font-size: 19px;}
+    .slide_navigation ul li span {width: 2rem;}
+    .main_visual .slide_arrow {width: 3.8rem;width: 3.47rem;bottom: 3.3rem;right: 1.67rem; }
+    /* .main_visual .arrow {bottom: 2.74rem;top: initial;} */
+    .main_visual .arrow.swiper-button-prev a, .main_visual .arrow.swiper-button-next a { background-size: .4rem .6rem;width: .4rem;height: .6rem; }
+    .main_visual .arrow.swiper-button-prev a.on {background-size: .4rem .6rem;}
+    .main_visual .arrow.swiper-button-next a.on {background-size: .4rem .6rem;}
+    .main_visual .arrow.swiper-button-prev:after { height: .67rem;bottom: -.06rem;}
+    .visual_notice {top: -4.6rem;}
+    .visual_notice .notice .tit {font-size: .8rem; padding: 0 0 10px 0;}
+    .visual_notice .notice p {font-size: .8rem;}
+    .visual_notice .notice p.sub_tit {font-size: 1.27rem;}
 
     .selectBox00 {background-size:9%;}
-    /* .visual_notice .notice p {font-size:.85rem;} */
-
     .section h2 p {font-size:3.5rem;}
 
     .workBox .works_list .list_view {width:100%; padding:0 .9rem;}

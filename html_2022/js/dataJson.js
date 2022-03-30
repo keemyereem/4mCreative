@@ -1424,7 +1424,7 @@
         "seq": "96",
         "type": "boxintxt",
         "title": "유니세프 후원자 온라인 캠페인",
-        "notice":"",
+        "notice":"&nbsp;",
         "notice_color":"gray",
         "pop_tit": "유니세프 후원자 온라인 캠페인",
         "pop_notice":"",
@@ -1474,7 +1474,7 @@
         "client":"산업통상자원부",
         "category": "all, application",
         "category_tit": "application",
-        "period": "2021~2023",
+        "period": "2021~2023 <br>&nbsp;",
         "size":"460,480",
         "backgroundColor":"#cd6917",
         "link":""
@@ -1550,7 +1550,7 @@
         "client":"SK D&D(주)",
         "category": "all, website, mobile",
         "category_tit": "website, mobile",
-        "period": "2021.01",
+        "period": "2021.01 <br>&nbsp;",
         "size":"460,444",
         "backgroundColor":"#ed7508",
         "link":""
@@ -1581,7 +1581,7 @@
         "client":"SK에코플랜트",
         "category": "all, website, mobile",
         "category_tit": "website, mobile",
-        "period": "2022",
+        "period": "2022 <br>&nbsp;",
         "size":"460,444",
         "backgroundColor":"#009a92",
         "link":""
