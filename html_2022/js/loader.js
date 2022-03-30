@@ -25,7 +25,7 @@ $(window).resize(function(){
     }
 });
 
-var dataUrl = "js/dataJson.js";
+var dataUrl = "js/dataJson2.js";
 
 // intro event
 var introEvent = {

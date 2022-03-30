@@ -213,9 +213,10 @@
     .header h1 img {width:5.75rem;}
     .main_visual:after {display:none;}
     .main_visual .visual_box {height: 25.3rem;}
-    .main_visual .slide_navigation {}
-    .main_visual .arrow {}
-    .visual_notice {top: -4.6rem;/* position: initial; margin-top: -4.6rem; */}
+    .main_visual .slide_navigation {bottom: 3.3rem;}
+    .main_visual .arrow {bottom: 2.74rem;top: initial;}
+    .main_visual .arrow.swiper-button-prev:after {}
+    .visual_notice {top: -4.6rem;/* position: initial; margin-top: -4.6rem; *//* padding-bottom: .87rem; */}
     .visual_notice .notice {width: 100%;}
     .visual_notice .notice .tit {font-size: 12px; padding: 0 0 10px 0;}
     .visual_notice .notice p {font-size: 12px;}

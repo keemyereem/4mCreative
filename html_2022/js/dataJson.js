@@ -1374,6 +1374,21 @@
     }, {
         "seq": "93",
         "type": "intxt",
+        "title": "LG화학 글로벌 이노베이션",
+        "notice":"",
+        "notice_color":"gray",
+        "pop_tit": "LG화학 글로벌 이노베이션 센터",
+        "pop_notice":"LG화학이 미국 보스턴에 글로벌 이노베이션 센터를 열고 글로벌 신약 개발을 진행하는 것에 대한 안내를 위해 제작된 LG화학의 글로벌 이노베이션 센터의 대표 사이트입니다.",
+        "client":"LG화학",
+        "category": "all, website (responsive web)",
+        "category_tit": "website (responsive web)",
+        "period": "2020년 연간 운영",
+        "size":"220,300",
+        "backgroundColor":"#c42834",
+        "link":""
+    }, {
+        "seq": "94",
+        "type": "intxt",
         "title": "좋아서 하는 기념일",
         "title_color":"white",
         "notice":"",
@@ -1389,7 +1404,7 @@
         "backgroundColor":"#c42834",
         "link":""
     }, {
-        "seq": "94",
+        "seq": "95",
         "type": "intxt",
         "title": "유니세프 온라인 필드트립 프로모션",
         "title_color":"white",
@@ -1406,21 +1421,6 @@
         "backgroundColor":"#3162af",
         "link":""
     }, {
-        "seq": "95",
-        "type": "intxt",
-        "title": "LG화학 글로벌 이노베이션",
-        "notice":"",
-        "notice_color":"gray",
-        "pop_tit": "LG화학 글로벌 이노베이션 센터",
-        "pop_notice":"LG화학이 미국 보스턴에 글로벌 이노베이션 센터를 열고 글로벌 신약 개발을 진행하는 것에 대한 안내를 위해 제작된 LG화학의 글로벌 이노베이션 센터의 대표 사이트입니다.",
-        "client":"LG화학",
-        "category": "all, website (responsive web)",
-        "category_tit": "website (responsive web)",
-        "period": "2020년 연간 운영",
-        "size":"220,300",
-        "backgroundColor":"#c42834",
-        "link":""
-    }, {
         "seq": "96",
         "type": "boxintxt",
         "title": "유니세프 후원자 온라인 캠페인",
@@ -1432,7 +1432,7 @@
         "category": "all, website, mobile, management/promotion",
         "category_tit": "website, mobile, management/promotion",
         "period": "2021.01",
-        "size":"460,460",
+        "size":"460,470",
         "backgroundColor":"#3162af",
         "link":""
     }, {
@@ -1475,7 +1475,7 @@
         "category": "all, application",
         "category_tit": "application",
         "period": "2021~2023",
-        "size":"460,460",
+        "size":"460,480",
         "backgroundColor":"#cd6917",
         "link":""
     }, {

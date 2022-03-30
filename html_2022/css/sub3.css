@@ -78,7 +78,7 @@
 .workBox .works_list .list_view ul li.outtxt a .data_box p.notice {}
 .workBox .works_list .list_view ul li.outtxt a .data_box p.period {}
 
-.workBox .works_list .list_view ul li.boxintxt a .data_box {position:absolute; bottom:0; left:0; padding-right:8rem;}
+.workBox .works_list .list_view ul li.boxintxt a .data_box {position:absolute; bottom:1.5rem; left:0; padding-right:8rem;}
 .workBox .works_list .list_view ul li.boxintxt a .data_box p.tit {font-size:1.6rem;}
 .workBox .works_list .list_view ul li.boxintxt a .data_box p.notice {}
 .workBox .works_list .list_view ul li.boxintxt a .data_box p.period {}
