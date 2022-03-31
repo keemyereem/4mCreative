@@ -1474,7 +1474,7 @@
         "client":"산업통상자원부",
         "category": "all, application",
         "category_tit": "application",
-        "period": "2021~2023 <br>&nbsp;",
+        "period": "2021~2023",
         "size":"460,480",
         "backgroundColor":"#cd6917",
         "link":""
@@ -1527,7 +1527,7 @@
     }, {
         "seq": "103",
         "type": "intxt",
-        "title": "LG화학 글로벌<br/>이노베이션",
+        "title": "LG화학 글로벌 이노베이션",
         "notice":"",
         "notice_color":"white",
         "pop_tit": "LG화학 글로벌 이노베이션 센터",
@@ -1550,7 +1550,7 @@
         "client":"SK D&D(주)",
         "category": "all, website, mobile",
         "category_tit": "website, mobile",
-        "period": "2021.01 <br>&nbsp;",
+        "period": "2021.01",
         "size":"460,444",
         "backgroundColor":"#ed7508",
         "link":""
@@ -1560,6 +1560,7 @@
         "title": "유니세프 한국위원회",
         "title_color":"white",
         "notice":"2022년<br/> 연간 운영",
+        "mobile_br": "brmob",
         "notice_color":"gray",
         "pop_tit": "유니세프 한국위원회",
         "pop_notice":"2022년 연간 운영",
@@ -1581,7 +1582,7 @@
         "client":"SK에코플랜트",
         "category": "all, website, mobile",
         "category_tit": "website, mobile",
-        "period": "2022 <br>&nbsp;",
+        "period": "2022",
         "size":"460,444",
         "backgroundColor":"#009a92",
         "link":""
@@ -1601,7 +1602,7 @@
         "period_color":"gray",
         "size":"220,300",
         "backgroundColor":"#6b8240",
-        "link":""
+        "link":""        
     }
 ]
 }
