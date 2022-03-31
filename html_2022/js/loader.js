@@ -92,15 +92,28 @@ var workEvent = {
                         html += "<img src='images/works/work_list"+dataList[i].seq+".png' alt='"+dataList[i].title+"' class='pc' />";
                         html += "<img src='images/works/m_work_list"+dataList[i].seq+".png' alt='"+dataList[i].title+"' class='mobile' />";
                         html += "<div class='data_box'>";
-                        if(dataList[i].title_color != undefined){
+                        
+                        html += "<p class='tit "+dataList[i].title_color+"'>"+dataList[i].title+"</p>";
+                        // isotope WORKS 영역 컨트롤(초기값)
+                        if(dataList[i].title_color != undefined){       // 타이틀컬러 데이터값이 부여된 경우
                             html += "<p class='tit "+dataList[i].title_color+"'>"+dataList[i].title+"</p>";
-                            html += "<p class='notice "+dataList[i].notice_color+"'>"+dataList[i].notice+"</p>";
+                            if(dataList[i].mobile_br != undefined) {
+                                html += "<p class='notice "+dataList[i].notice_color+ ' '+dataList[i].mobile_br+"'>"+dataList[i].notice+"</p>";
+                            } else {
+                                html += "<p class='notice "+dataList[i].notice_color+"'>"+dataList[i].notice+"</p>";
+                            }
                             html += "<p class='period "+dataList[i].period_color+"'>"+dataList[i].period+"</p>";
-                        }else{
+                        }else{  // 타이틀컬러 데이터값 없는 경우
                             html += "<p class='tit'>"+dataList[i].title+"</p>";
-                            html += "<p class='notice'>"+dataList[i].notice+"</p>";
+                            if(dataList[i].mobile_br != undefined) {
+                                html += "<p class='notice "+dataList[i].mobile_br+"'>"+dataList[i].notice+"</p>";
+                            } else {
+                                html += "<p class='notice'>"+dataList[i].notice+"</p>";
+                            }                           
                             html += "<p class='period'>"+dataList[i].period+"</p>";
                         }
+
+                       
                         html += "</div>";
                         html += "<span class='bgitem' style='width:"+(imgWidth+1)+"rem; height:"+(imgHeight+1)+"rem;'><img src='images/icon/btn_more.png' /></span>";
                     html += "</a>";
@@ -176,13 +189,24 @@ var workEvent = {
                             html += "<img src='images/works/work_list"+_.categoryArr[i].seq+".png' alt='"+_.categoryArr[i].title+"' class='pc' />";
                             html += "<img src='images/works/m_work_list"+_.categoryArr[i].seq+".png' alt='"+_.categoryArr[i].title+"' class='mobile' />";
                             html += "<div class='data_box'>";
-                            if(_.categoryArr[i].title_color != undefined){
+
+                            // ※※※※전체메뉴 제외 다른 메뉴에서 하단 더보기 클릭※※※※ //
+                            // isotope WORKS 영역 컨트롤(카테고리메뉴 클릭 후 새로 나오는 포트폴리오)
+                            if(_.categoryArr[i].title_color != undefined){      // 타이틀컬러 데이터값이 부여된 경우
                                 html += "<p class='tit "+_.categoryArr[i].title_color+"'>"+_.categoryArr[i].title+"</p>";
-                                html += "<p class='notice "+_.categoryArr[i].notice_color+"'>"+_.categoryArr[i].notice+"</p>";
+                                if(_.categoryArr[i].mobile_br != undefined) {
+                                    html += "<p class='notice "+_.categoryArr[i].notice_color+ ' '+_.categoryArr[i].mobile_br+"'>"+_.categoryArr[i].notice+"</p>";
+                                } else {
+                                    html += "<p class='notice "+_.categoryArr[i].notice_color+"'>"+_.categoryArr[i].notice+"</p>";
+                                }                               
                                 html += "<p class='period "+_.categoryArr[i].period_color+"'>"+_.categoryArr[i].period+"</p>";
-                            }else{
+                            }else{  // 타이틀컬러 데이터값 없는 경우
                                 html += "<p class='tit'>"+_.categoryArr[i].title+"</p>";
-                                html += "<p class='notice'>"+_.categoryArr[i].notice+"</p>";
+                                if(_.categoryArr[i].mobile_br != undefined) {
+                                    html += "<p class='notice "+_.categoryArr[i].mobile_br+"'>"+_.categoryArr[i].notice+"</p>";
+                                } else {
+                                    html += "<p class='notice'>"+_.categoryArr[i].notice+"</p>";
+                                }       
                                 html += "<p class='period'>"+_.categoryArr[i].period+"</p>";
                             }
                             html += "</div>";
@@ -212,13 +236,24 @@ var workEvent = {
                                 html += "<img src='images/works/work_list"+dataList[i].seq+".png' alt='"+dataList[i].title+"' class='pc' />";
                                 html += "<img src='images/works/m_work_list"+dataList[i].seq+".png' alt='"+dataList[i].title+"' class='mobile' />";
                                 html += "<div class='data_box'>";
-                                if(dataList[i].title_color != undefined){
+
+                                // ※※※※전체메뉴에서 하단 더보기 클릭※※※※ //
+                                // isotope WORKS 영역 컨트롤(카테고리메뉴 클릭 후 새로 나오는 포트폴리오)
+                                if(dataList[i].title_color != undefined){     // 타이틀컬러 데이터값이 부여된 경우
                                     html += "<p class='tit "+dataList[i].title_color+"'>"+dataList[i].title+"</p>";
-                                    html += "<p class='notice "+dataList[i].notice_color+"'>"+dataList[i].notice+"</p>";
+                                    if(dataList[i].mobile_br != undefined) {
+                                        html += "<p class='notice "+dataList[i].notice_color+ ' '+dataList[i].mobile_br+"'>"+dataList[i].notice+"</p>";
+                                    } else {
+                                        html += "<p class='notice "+dataList[i].notice_color+"'>"+dataList[i].notice+"</p>";
+                                    }
                                     html += "<p class='period "+dataList[i].period_color+"'>"+dataList[i].period+"</p>";
-                                }else{
+                                }else{  // 타이틀컬러 데이터값 없는 경우
                                     html += "<p class='tit'>"+dataList[i].title+"</p>";
-                                    html += "<p class='notice'>"+dataList[i].notice+"</p>";
+                                    if(dataList[i].mobile_br != undefined) {
+                                        html += "<p class='notice "+dataList[i].mobile_br+"'>"+dataList[i].notice+"</p>";
+                                    } else {
+                                        html += "<p class='notice'>"+dataList[i].notice+"</p>";
+                                    }                           
                                     html += "<p class='period'>"+dataList[i].period+"</p>";
                                 }
                                 html += "</div>";
@@ -278,13 +313,24 @@ var workEvent = {
                             html += "<img src='images/works/work_list"+isData[i].seq+".png' alt='"+isData[i].title+"' class='pc' />";
                             html += "<img src='images/works/m_work_list"+isData[i].seq+".png' alt='"+isData[i].title+"' class='mobile' />";
                             html += "<div class='data_box'>";
-                            if(isData[i].title_color != undefined){
+                            
+                            // ※※※※카테고리 버튼 클릭 시 (PC네비게이션)※※※※ //
+                            // isotope WORKS 영역 컨트롤(카테고리메뉴 클릭 후 새로 나오는 포트폴리오)
+                            if(isData[i].title_color != undefined){    // 타이틀컬러 데이터값이 부여된 경우
                                 html += "<p class='tit "+isData[i].title_color+"'>"+isData[i].title+"</p>";
-                                html += "<p class='notice "+isData[i].notice_color+"'>"+isData[i].notice+"</p>";
+                                if(isData[i].mobile_br != undefined) {
+                                    html += "<p class='notice "+isData[i].notice_color+ ' '+isData[i].mobile_br+"'>"+isData[i].notice+"</p>";
+                                } else {
+                                    html += "<p class='notice "+isData[i].notice_color+"'>"+isData[i].notice+"</p>";
+                                }             
                                 html += "<p class='period "+isData[i].period_color+"'>"+isData[i].period+"</p>";
-                            }else{
+                            }else{  // 타이틀컬러 데이터값 없는 경우
                                 html += "<p class='tit'>"+isData[i].title+"</p>";
-                                html += "<p class='notice'>"+isData[i].notice+"</p>";
+                                if(isData[i].mobile_br != undefined) {
+                                    html += "<p class='notice "+isData[i].mobile_br+"'>"+isData[i].notice+"</p>";
+                                } else {
+                                    html += "<p class='notice'>"+isData[i].notice+"</p>";
+                                }                                     
                                 html += "<p class='period'>"+isData[i].period+"</p>";
                             }
                             html += "</div>";
@@ -335,13 +381,24 @@ var workEvent = {
                             html += "<img src='images/works/work_list"+isData[i].seq+".png' alt='"+isData[i].title+"' class='pc' />";
                             html += "<img src='images/works/m_work_list"+isData[i].seq+".png' alt='"+isData[i].title+"' class='mobile' />";
                             html += "<div class='data_box'>";
-                            if(isData[i].title_color != undefined){
+
+                            // ※※※※카테고리 버튼 클릭 시 (MOBILE네비게이션)※※※※ //
+                            // isotope WORKS 영역 컨트롤(카테고리메뉴 클릭 후 새로 나오는 포트폴리오)
+                            if(isData[i].title_color != undefined){    // 타이틀컬러 데이터값이 부여된 경우
                                 html += "<p class='tit "+isData[i].title_color+"'>"+isData[i].title+"</p>";
-                                html += "<p class='notice "+isData[i].notice_color+"'>"+isData[i].notice+"</p>";
+                                if(isData[i].mobile_br != undefined) {
+                                    html += "<p class='notice "+isData[i].notice_color+ ' '+isData[i].mobile_br+"'>"+isData[i].notice+"</p>";
+                                } else {
+                                    html += "<p class='notice "+isData[i].notice_color+"'>"+isData[i].notice+"</p>";
+                                }             
                                 html += "<p class='period "+isData[i].period_color+"'>"+isData[i].period+"</p>";
-                            }else{
+                            }else{  // 타이틀컬러 데이터값 없는 경우
                                 html += "<p class='tit'>"+isData[i].title+"</p>";
-                                html += "<p class='notice'>"+isData[i].notice+"</p>";
+                                if(isData[i].mobile_br != undefined) {
+                                    html += "<p class='notice "+isData[i].mobile_br+"'>"+isData[i].notice+"</p>";
+                                } else {
+                                    html += "<p class='notice'>"+isData[i].notice+"</p>";
+                                }                                     
                                 html += "<p class='period'>"+isData[i].period+"</p>";
                             }
                             html += "</div>";
